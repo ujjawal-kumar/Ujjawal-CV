@@ -1,0 +1,242 @@
+%-------------------------
+% Tailored Resume in LaTeX
+% Candidate: Ujjawal Kumar
+% Target Role: AI Engineer (LLM & Application Development) @ KPMG India
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{helvet} % Helvetica font for clean sans-serif look
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+% Document Margins (0.55 in)
+\usepackage[margin=0.55in]{geometry}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.15in}
+\addtolength{\evensidemargin}{-0.15in}
+\addtolength{\textwidth}{0.3in}
+\addtolength{\topmargin}{-0.15in}
+\addtolength{\textheight}{0.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeHeading}[4]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small\textbf{#1} & \\
+      \small\textit{#2} & \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Ujjawal Kumar} \\ \vspace{3pt}
+    \small AI Engineer (LLM \& Application Development) \\ \vspace{3pt}
+    \small +91-9431636985 \ \textbullet\ \ \href{mailto:ujjawal@uohyd.ac.in}{\underline{ujjawal@uohyd.ac.in}} \ \textbullet\ \ Bangalore, India \\ \vspace{2pt}
+    \small \href{https://github.com/ujjawal-kumar}{\underline{github.com/ujjawal-kumar}} \ \textbullet\ \ \href{https://linkedin.com/in/ujjawal-kumar}{\underline{linkedin.com/in/ujjawal-kumar}}
+    \vspace{-10pt}
+\end{center}
+
+
+%-----------SUMMARY-----------
+\section{Professional Summary}
+Passionate and results-oriented AI Engineer with \textbf{8 years} of software engineering experience, including \textbf{2.5+ years} of dedicated focus on building, optimizing, and deploying production-grade AI/LLM-powered applications. Expert in designing stateful multi-agent systems, Retrieval-Augmented Generation (RAG) pipelines, and high-performance Python backends. Highly skilled in writing clean, maintainable, and scalable code with a deep commitment to software engineering excellence, automated testing, and CI/CD/MLOps containerized workflows.
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{AI \& LLM Frameworks}{: LangChain, LangGraph, LlamaIndex, CrewAI, Model Context Protocol (MCP), Prompt Engineering, RAG Architectures, Agentic Workflows} \\ \vspace{1pt}
+     \textbf{Languages \& Backends}{: Python (FastAPI, Flask, Django), C++ (OOP, STL, C++11/14), Core Java, JavaScript, TypeScript, WebSockets} \\ \vspace{1pt}
+     \textbf{Machine Learning \& CV}{: PyTorch, TensorFlow, Keras, OpenCV, MTCNN, Tiny-CLIP, ONNX Runtime, Scikit-learn, NLTK, Spacy} \\ \vspace{1pt}
+     \textbf{Vector Databases \& Caching}{: Pinecone, Chroma, Milvus, Redis, SQLite, MySQL} \\ \vspace{1pt}
+     \textbf{DevOps \& MLOps}{: Docker, Kubernetes (AKS/GKE), Git, GitHub Actions (CI/CD), AWS, GCP, Azure, LangSmith, Ragas, TruLens}
+    }}
+ \end{itemize}
+
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeHeading
+      {Virtusa}{Bangalore, India}
+      {AI Engineer}{Feb 2026 -- Present}
+      \resumeItemListStart
+        \resumeItem{AI \& LLM Integration}
+          {Design, build, and optimize enterprise-grade GenAI applications leveraging OpenAI, Anthropic, and open-source models. Built advanced RAG systems and stateful multi-agent workflows with LangGraph and LangChain.}
+        \resumeItem{Backend Application Development}
+          {Write clean, maintainable, and highly concurrent APIs using \textbf{FastAPI} and \textbf{Flask}, establishing robust, low-latency Python backends to support core AI features.}
+        \resumeItem{Vector Databases \& Caching}
+          {Managed semantic data ingestion pipelines into \textbf{Pinecone} and \textbf{Chroma}. Integrated \textbf{Redis} caching, improving LLM query speed by 35\% and reducing API latency and cost.}
+        \resumeItem{DevOps \& MLOps}
+          {Engineered automated CI/CD pipelines via GitHub Actions, containerized backend services using \textbf{Docker}, and managed cloud infrastructure on \textbf{AWS} and \textbf{Azure}.}
+        \resumeItem{Model Evaluation}
+          {Standardized pipeline evaluations utilizing \textbf{LangSmith} and \textbf{Ragas} to benchmark model outputs, trace agentic decision trajectories, and measure hallucination rates in production.}
+      \resumeItemListEnd
+
+    \resumeHeading
+      {Verificient Technologies Inc}{Pune, India}
+      {Computer Vision \& AI Engineer}{March 2021 -- Jan 2026}
+      \resumeItemListStart
+        \resumeItem{Machine Learning \& CV}
+          {Developed and deployed production-grade computer vision applications, transitioning models from research prototypes to highly optimized software.}
+        \resumeItem{LLM \& Video Integration}
+          {Designed a native C++ addon leveraging small-scale local LLMs (GGML/GGUF) and Tiny-CLIP to enable natural language incident querying over video streams.}
+        \resumeItem{Inference Optimization}
+          {Optimized edge/cloud inference pipelines using \textbf{ONNX Runtime} and \textbf{C++}, reducing processing latency by 40\% and cutting GPU resource overhead.}
+        \resumeItem{Cloud \& Orchestration}
+          {Managed containerized microservices deployments on \textbf{GCP} and \textbf{Azure} using \textbf{Kubernetes} for service scaling and high availability.}
+        \resumeItem{Frontend Prototyping}
+          {Built interactive dashboards using JavaScript, HTML5, and CSS3 to visualize live model inference, telemetry, and camera feeds for rapid prototyping.}
+      \resumeItemListEnd
+
+    \resumeHeading
+      {Zen Technologies Limited}{Hyderabad, India}
+      {Research Engineer - Software}{Jul 2018 -- Feb 2021}
+      \resumeItemListStart
+        \resumeItem{Software Engineering}
+          {Developed clean, object-oriented C++ and Python code for tactical simulation software, managing complex data structures and state engines.}
+        \resumeItem{Database \& Schema Design}
+          {Architected relational database schemas in \textbf{MySQL} and \textbf{SQLite} to manage student performance records, automated logging, and training evaluation metrics.}
+        \resumeItem{Microservices}
+          {Developed RESTful APIs using \textbf{Flask} and \textbf{Django} backends to integrate simulator modules and external client applications.}
+        \resumeItem{Collaboration \& QA}
+          {Collaborated with cross-functional engineering teams to implement automated unit testing and robust integration suites, improving release stability.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Selected Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {Multi-Agent Research Ops Orchestrator}
+      {Technologies: LangGraph, LangChain, MCP, Python, Redis, Docker, LangSmith}
+      \resumeItemListStart
+        \resumeItem{Architecture}
+          {Architected a stateful multi-agent system using \textbf{LangGraph} to automate complex, multi-step research and data retrieval workflows with cyclic error correction.}
+        \resumeItem{Tool Integration}
+          {Integrated Model Context Protocol (\textbf{MCP}) servers to decouple tool execution from reasoning, allowing agents to discover and consume database and filesystem tools.}
+        \resumeItem{State Control}
+          {Implemented persistent conversation memory and "Human-in-the-Loop" checkpoints, allowing administrative approvals on critical tool actions.}
+        \resumeItem{Evaluation}
+          {Utilized \textbf{LangSmith} to evaluate agent trajectories, decreasing model hallucination rates and optimizing LLM token spend.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {LLM-Based Video Incident Analysis}
+      {Technologies: GGML, Tiny-CLIP, C++, ONNX, Node.js}
+      \resumeItemListStart
+        \resumeItem{Incident Querying}
+          {Designed and built a native C++ addon integrating a local small-scale LLM to enable natural-language search over live video.}
+        \resumeItem{Multimodal Alignment}
+          {Aligned video frames with text prompt embeddings using \textbf{Tiny-CLIP} for real-time semantic incident classification.}
+        \resumeItem{Performance}
+          {Implemented highly efficient C++ pipelines using \textbf{GGML} and \textbf{ONNX} for optimized CPU/GPU-split inference.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {Face Recognition Attendance System}
+      {Technologies: Flask, SQLite, WebSockets, OpenCV, MTCNN, Docker}
+      \resumeItemListStart
+        \resumeItem{Model Training}
+          {Retrained custom face recognition models using transfer learning, achieving 96.5\% detection and classification accuracy.}
+        \resumeItem{Real-time Pipeline}
+          {Designed low-latency WebSocket communication between client browser and Flask backend for real-time frame transmission.}
+        \resumeItem{Deployment}
+          {Packaged application services with Docker and deployed to AWS cloud instance with SQLite database persistence.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeHeading
+      {University of Hyderabad}{Hyderabad, India}
+      {M.Tech in Artificial Intelligence (GPA: 8.63/10.0)}{2016 -- 2018}
+    \resumeHeading
+      {Guru Nanak Dev University}{Amritsar, India}
+      {B.Tech in Computer Science \& Engineering (GPA: 8.75/10.0)}{2012 -- 2016}
+  \resumeSubHeadingListEnd
+
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements \& Awards}
+ \begin{itemize}[leftmargin=0.15in]
+    \small{
+      \item \textbf{Hackathon Winner:} Won the 24-Hour University Hackathon hosted by Invesco Pvt Ltd at the University of Hyderabad.
+      \item \textbf{GATE Qualifier:} Qualified in the \textbf{97.8th percentile} in GATE-2016 Computer Science (conducted by IISc Bangalore).
+    }
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}

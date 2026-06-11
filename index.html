@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ujjawal Kumar | AI Engineer (LLM & Application Development)</title>
+    <meta name="description" content="Professional CV of Ujjawal Kumar, AI Engineer specializing in LLMs, agentic workflows, and production-grade Python backend applications. Candidate for KPMG India.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Gradient Grids -->
+    <div class="bg-blur bg-blur-1"></div>
+    <div class="bg-blur bg-blur-2"></div>
+
+    <div class="container">
+        <!-- Floating Navigation / Quick Actions -->
+        <nav class="quick-nav no-print">
+            <div class="nav-brand">UK</div>
+            <div class="nav-links">
+                <button class="nav-btn active" data-target="overview-tab">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                    <span>Overview</span>
+                </button>
+                <button class="nav-btn" data-target="experience-tab">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-8-2h4v2h-4V4zm8 15H4V8h16v11z"/></svg>
+                    <span>Experience</span>
+                </button>
+                <button class="nav-btn" data-target="projects-tab">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
+                    <span>Projects</span>
+                </button>
+                <button class="nav-btn" data-target="skills-tab">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M12.9 3.4c-.3-.3-.9-.3-1.2 0L3.4 11.7c-.3.3-.3.9 0 1.2l8.3 8.3c.3.3.9.3 1.2 0l8.3-8.3c.3-.3.3-.9 0-1.2l-8.3-8.3zm-.6 15.2c-.3.3-.9.3-1.2 0l-5.3-5.3c-.3-.3-.3-.9 0-1.2l5.3-5.3c.3-.3.9-.3 1.2 0l5.3 5.3c.3.3.3.9 0 1.2l-5.3 5.3z"/></svg>
+                    <span>Skills</span>
+                </button>
+                <button class="nav-btn" data-target="ats-tab">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                    <span>ATS Resume</span>
+                </button>
+            </div>
+            <div class="nav-actions">
+                <button class="action-btn print-btn" onclick="document.activeElement.blur(); window.getSelection().removeAllRanges(); window.print();" title="Print / Export PDF">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"/></svg>
+                    <span>Save PDF</span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- PRINT HEADER (Only visible when printing) -->
+        <header class="print-header only-print">
+            <div class="print-name-title">
+                <h1>UJJAWAL KUMAR</h1>
+                <p class="print-title">AI Engineer (LLM & Application Development)</p>
+            </div>
+            <div class="print-meta">
+                <div><strong>Email:</strong> ujjawal@uohyd.ac.in</div>
+                <div><strong>Phone:</strong> +91-9431636985</div>
+                <div><strong>Location:</strong> Bangalore, India</div>
+                <div><strong>GitHub:</strong> github.com/ujjawal-kumar</div>
+            </div>
+        </header>
+
+        <!-- MAIN APP CONTENT -->
+        <main class="main-content">
+            <!-- Header Section (Screen Only) -->
+            <header class="profile-header no-print">
+                <div class="header-card">
+                    <div class="profile-badge">UK</div>
+                    <div class="profile-info">
+                        <span class="pill status-pill">Available for Bengaluru/Mumbai/NCR/Hyd</span>
+                        <h1>Ujjawal Kumar</h1>
+                        <h2>AI Engineer <span class="gradient-text">(LLM & Application Development)</span></h2>
+                        
+                        <div class="contact-grid">
+                            <a href="mailto:ujjawal@uohyd.ac.in" class="contact-item">
+                                <svg class="icon" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                                <span>ujjawal@uohyd.ac.in</span>
+                            </a>
+                            <a href="tel:+919431636985" class="contact-item">
+                                <svg class="icon" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                                <span>+91-9431636985</span>
+                            </a>
+                            <div class="contact-item">
+                                <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                                <span>Bangalore, India</span>
+                            </div>
+                            <a href="https://github.com/ujjawal-kumar" target="_blank" class="contact-item">
+                                <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.137 20.162 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                                <span>github.com/ujjawal-kumar</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- TAB CONTENT PANELS -->
+            <div class="tabs-container">
+                
+                <!-- 1. OVERVIEW TAB -->
+                <section id="overview-tab" class="tab-panel active">
+                    <div class="overview-grid">
+                        <div class="col-main">
+                            <div class="card summary-card">
+                                <h3>Professional Summary</h3>
+                                <p>Passionate and results-oriented AI Engineer with **8 years** of software engineering experience, including **2.5+ years** of dedicated focus on building, optimizing, and deploying production-grade AI/LLM-powered applications. Expert in designing stateful multi-agent systems, Retrieval-Augmented Generation (RAG) pipelines, and high-performance Python backends. Highly skilled in writing clean, maintainable, and scalable code with a deep commitment to software engineering excellence, automated testing, and CI/CD/MLOps containerized workflows.</p>
+                            </div>
+
+                            <div class="card dashboard-stats no-print">
+                                <h3>Quick Highlights</h3>
+                                <div class="stats-grid">
+                                    <div class="stat-box">
+                                        <span class="stat-val">8 Yrs</span>
+                                        <span class="stat-lbl">Software Eng.</span>
+                                    </div>
+                                    <div class="stat-box">
+                                        <span class="stat-val">2.5+ Yrs</span>
+                                        <span class="stat-lbl">LLM & GenAI</span>
+                                    </div>
+                                    <div class="stat-box">
+                                        <span class="stat-val">M.Tech</span>
+                                        <span class="stat-lbl">Artificial Intelligence</span>
+                                    </div>
+                                    <div class="stat-box">
+                                        <span class="stat-val">97.8%</span>
+                                        <span class="stat-lbl">GATE CS Score</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card alignment-card no-print">
+                                <h3>Why I Match KPMG's Requirements</h3>
+                                <ul class="match-list">
+                                    <li>
+                                        <strong>Production AI/LLM Integration:</strong> Proven expertise designing multi-agent orchestrators (LangGraph/CrewAI) and structured tool discovery using Model Context Protocol (MCP).
+                                    </li>
+                                    <li>
+                                        <strong>Scalable Python Backends:</strong> Extensive experience writing clean, scalable services using FastAPI, Flask, and Django, optimizing vector storage and database transactions.
+                                    </li>
+                                    <li>
+                                        <strong>Rigorous Software Engineering:</strong> Practical experience setting up CI/CD workflows (GitHub Actions), Docker, and Kubernetes deployment on AWS, GCP, and Azure.
+                                    </li>
+                                    <li>
+                                        <strong>Evaluation-Driven MLOps:</strong> Focused on cost, latency, and hallucination reduction by benchmarking with evaluation frameworks (LangSmith, Ragas).
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-sidebar no-print">
+                            <div class="card sidebar-card">
+                                <h3>Education</h3>
+                                <div class="education-item">
+                                    <h4>M.Tech in Artificial Intelligence</h4>
+                                    <p class="school">University of Hyderabad</p>
+                                    <p class="date">2016 – 2018 | GPA: 8.63/10.0</p>
+                                </div>
+                                <div class="education-item">
+                                    <h4>B.Tech in Computer Science & Eng.</h4>
+                                    <p class="school">Guru Nanak Dev University, Amritsar</p>
+                                    <p class="date">2012 – 2016 | GPA: 8.75/10.0</p>
+                                </div>
+                            </div>
+
+                            <div class="card sidebar-card">
+                                <h3>Achievements</h3>
+                                <div class="achievement-item">
+                                    <div class="badge-icon">🏆</div>
+                                    <div>
+                                        <h4>Hackathon Winner</h4>
+                                        <p>Won 24-Hour Hackathon at University of Hyderabad, hosted by Invesco Pvt Ltd.</p>
+                                    </div>
+                                </div>
+                                <div class="achievement-item">
+                                    <div class="badge-icon">⚡</div>
+                                    <div>
+                                        <h4>GATE 2016 Qualifier</h4>
+                                        <p>Qualified in the 97.8th percentile in Computer Science (conducted by IISc Bangalore).</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 2. EXPERIENCE TAB (Cronological timeline) -->
+                <section id="experience-tab" class="tab-panel">
+                    <div class="timeline-container">
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content card">
+                                <div class="timeline-header">
+                                    <div>
+                                        <span class="pill company-pill">Virtusa</span>
+                                        <h3>AI Engineer</h3>
+                                    </div>
+                                    <span class="timeline-date">Feb 2025 – Present</span>
+                                </div>
+                                <p class="company-loc">Bangalore, India (On-Site/Hybrid)</p>
+                                <ul class="work-bullets">
+                                    <li><strong>AI & LLM Integration:</strong> Design, build, and optimize enterprise-grade GenAI applications utilizing OpenAI, Anthropic, and open-source models. Implemented advanced Retrieval-Augmented Generation (RAG) structures and stateful multi-agent workflows with LangGraph and LangChain.</li>
+                                    <li><strong>Backend Application Development:</strong> Wrote clean, maintainable, and highly concurrent APIs using <strong>FastAPI</strong> and <strong>Flask</strong>, establishing robust Python backends to support low-latency AI features.</li>
+                                    <li><strong>Vector Databases & Caching:</strong> Managed data ingestion, indexing, and retrieval pipeline strategies using <strong>Pinecone</strong> and <strong>Chroma</strong>. Integrated <strong>Redis</strong> caching, improving query speed by 35% and minimizing LLM token consumption.</li>
+                                    <li><strong>DevOps & MLOps:</strong> Engineered automated CI/CD pipelines via GitHub Actions, containerized backend services using <strong>Docker</strong>, and managed cloud deployments on <strong>AWS/Azure</strong>.</li>
+                                    <li><strong>Model Evaluation:</strong> Standardized pipeline evaluation utilizing <strong>LangSmith</strong> and <strong>Ragas</strong> to benchmark model outputs, trace agent trajectories, and measure hallucination rates.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content card">
+                                <div class="timeline-header">
+                                    <div>
+                                        <span class="pill company-pill">Verificient Technologies Inc</span>
+                                        <h3>Computer Vision & AI Engineer</h3>
+                                    </div>
+                                    <span class="timeline-date">March 2021 – Jan 2026</span>
+                                </div>
+                                <p class="company-loc">Pune, India</p>
+                                <ul class="work-bullets">
+                                    <li><strong>Machine Learning & CV Systems:</strong> Developed and deployed production-grade computer vision applications, optimizing real-time object detection and classification models.</li>
+                                    <li><strong>LLM & Video Integration:</strong> Designed a native C++ addon leveraging small-scale LLMs (GGML/GGUF) and Tiny-CLIP to enable natural language incident querying over video streams.</li>
+                                    <li><strong>Inference Optimization:</strong> Optimized edge/cloud inference pipelines using <strong>ONNX Runtime</strong> and <strong>C++</strong>, reducing latency by 40% and cutting GPU overhead.</li>
+                                    <li><strong>Cloud & Orchestration:</strong> Deployed containerized microservices on **GCP** and **Azure** cloud environments, managing clusters with **Kubernetes** for scaling.</li>
+                                    <li><strong>Rapid Prototyping:</strong> Built interactive web interfaces and frontend dashboards using JavaScript, HTML5, and CSS3 to visualize live AI inference and model performance metrics.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content card">
+                                <div class="timeline-header">
+                                    <div>
+                                        <span class="pill company-pill">Zen Technologies Limited</span>
+                                        <h3>Research Engineer - Software</h3>
+                                    </div>
+                                    <span class="timeline-date">Jul 2018 – Feb 2021</span>
+                                </div>
+                                <p class="company-loc">Hyderabad, India</p>
+                                <ul class="work-bullets">
+                                    <li><strong>Software Engineering:</strong> Developed clean, modular, and object-oriented C++ and Python code for defense simulator software, managing complex data structures and state engines.</li>
+                                    <li><strong>Database & Schema Design:</strong> Architected relational database schemas in **MySQL** and **SQLite** to manage student performance records, automated logging, and training evaluation metrics.</li>
+                                    <li><strong>Microservices:</strong> Developed RESTful APIs using **Flask** and **Django** backends to integrate system modules.</li>
+                                    <li><strong>Testing & Collaboration:</strong> Collaborated with cross-functional engineering teams to run automated test suites, improving release stability and minimizing bugs in simulation builds.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- 3. PROJECTS TAB -->
+                <section id="projects-tab" class="tab-panel">
+                    <div class="projects-grid">
+                        
+                        <div class="card project-card">
+                            <div class="project-header">
+                                <h3>Multi-Agent Research Ops Orchestrator</h3>
+                                <span class="project-tag">AI Agentic Workflows</span>
+                            </div>
+                            <p class="project-desc">Architected a stateful multi-agent system to automate complex research, data retrieval, and evaluation workflows with cyclic error-correction capabilities.</p>
+                            <div class="project-tech">
+                                <span>LangGraph</span>
+                                <span>LangChain</span>
+                                <span>MCP</span>
+                                <span>Python</span>
+                                <span>Redis</span>
+                                <span>LangSmith</span>
+                            </div>
+                            <ul class="project-points">
+                                <li>Implemented persistent conversation memory and "Human-in-the-Loop" checkpoints using LangGraph's state savers.</li>
+                                <li>Integrated Model Context Protocol (MCP) servers to decouple tool execution, enabling agents to dynamically discover filesystem and database tools.</li>
+                                <li>Optimized token spend and trajectory evaluation using LangSmith, reducing execution errors by 25%.</li>
+                            </ul>
+                        </div>
+
+                        <div class="card project-card">
+                            <div class="project-header">
+                                <h3>LLM-Based Video Incident Analysis</h3>
+                                <span class="project-tag">Multimodal GenAI</span>
+                            </div>
+                            <p class="project-desc">Developed a high-performance C++ native addon integrating lightweight LLMs and vision-language alignment models for natural language incident querying.</p>
+                            <div class="project-tech">
+                                <span>GGML</span>
+                                <span>Tiny-CLIP</span>
+                                <span>C++</span>
+                                <span>ONNX</span>
+                                <span>Node.js</span>
+                            </div>
+                            <ul class="project-points">
+                                <li>Aligned video frames with text prompts using Tiny-CLIP for semantic incident localization.</li>
+                                <li>Built ultra-fast C++ inference pipelines with GGML, reducing latency to sub-second levels for query tasks.</li>
+                                <li>Exposed RESTful and WebSocket APIs for seamless interaction with modern web frontends.</li>
+                            </ul>
+                        </div>
+
+                        <div class="card project-card">
+                            <div class="project-header">
+                                <h3>Face Recognition Attendance System</h3>
+                                <span class="project-tag">Computer Vision</span>
+                            </div>
+                            <p class="project-desc">Engineered an automated student attendance tracking application, complete with real-time video processing and back-end database administration dashboard.</p>
+                            <div class="project-tech">
+                                <span>Flask</span>
+                                <span>OpenCV</span>
+                                <span>MTCNN</span>
+                                <span>SQLite</span>
+                                <span>WebSockets</span>
+                                <span>Docker</span>
+                            </div>
+                            <ul class="project-points">
+                                <li>Retrained custom models on custom face sets using transfer learning, attaining 96.5% accuracy.</li>
+                                <li>Designed real-time WebSockets communication, ensuring low-latency video feed analysis between client and server.</li>
+                                <li>Managed deployment on a cloud VPS containerized with Docker for easy environment replication.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- 4. SKILLS TAB -->
+                <section id="skills-tab" class="tab-panel">
+                    <div class="skills-grid">
+                        
+                        <div class="card skill-category-card">
+                            <h3>Generative AI & LLMs</h3>
+                            <div class="skill-list">
+                                <div class="skill-row">
+                                    <div class="skill-name">LangChain & LangGraph</div>
+                                    <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                                </div>
+                                <div class="skill-row">
+                                    <div class="skill-name">Agentic Workflows (MCP, CrewAI)</div>
+                                    <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                                </div>
+                                <div class="skill-row">
+                                    <div class="skill-name">RAG (Retrieval-Augmented Gen)</div>
+                                    <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                                </div>
+                                <div class="skill-row">
+                                    <div class="skill-name">Vector Databases (Pinecone, Chroma)</div>
+                                    <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card skill-category-card">
+                            <h3>Backend & Languages</h3>
+                            <div class="skill-list">
+                                <div class="skill-row">
+                                    <div class="skill-name">Python (FastAPI, Flask, Django)</div>
+                                    <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                                </div>
+                                <div class="skill-row">
+                                    <div class="skill-name">C++ (OOP, STL, System level)</div>
+                                    <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                                </div>
+                                <div class="skill-row">
+                                    <div class="skill-name">SQL Databases & Redis Caching</div>
+                                    <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                                </div>
+                                <div class="skill-row">
+                                    <div class="skill-name">Microservices Architecture</div>
+                                    <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card skill-category-card">
+                            <h3>DevOps, MLOps & Cloud</h3>
+                            <div class="skill-list">
+                                <div class="skill-row">
+                                    <div class="skill-name">Docker & Kubernetes</div>
+                                    <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                                </div>
+                                <div class="skill-row">
+                                    <div class="skill-name">Cloud Platforms (AWS, GCP, Azure)</div>
+                                    <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                                </div>
+                                <div class="skill-row">
+                                    <div class="skill-name">CI/CD & Git Version Control</div>
+                                    <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                                </div>
+                                <div class="skill-row">
+                                    <div class="skill-name">AI Evaluation (LangSmith, Ragas)</div>
+                                    <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card skill-category-card">
+                            <h3>Classic ML & Computer Vision</h3>
+                            <div class="skill-list">
+                                <div class="skill-row">
+                                    <div class="skill-name">Deep Learning (PyTorch, TF)</div>
+                                    <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                                </div>
+                                <div class="skill-row">
+                                    <div class="skill-name">Computer Vision (OpenCV, MTCNN)</div>
+                                    <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                                </div>
+                                <div class="skill-row">
+                                    <div class="skill-name">NLP (NLTK, Spacy, CLIP)</div>
+                                    <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                                </div>
+                                <div class="skill-row">
+                                    <div class="skill-name">JS & TypeScript (Rapid Prototyping)</div>
+                                    <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- 5. ATS RESUME VIEW -->
+                <section id="ats-tab" class="tab-panel">
+                    <div class="card ats-card">
+                        <div class="ats-actions">
+                            <span class="ats-title-label">Copy-paste ready Markdown format for Job Portals</span>
+                            <button id="copy-markdown-btn" class="action-btn accent-btn">
+                                <svg class="icon" viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+                                <span>Copy Markdown</span>
+                            </button>
+                        </div>
+                        <div class="markdown-preview-container">
+                            <pre id="markdown-code-block"></pre>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Print-only static sections to guarantee a clean 2-page print layout -->
+    <div class="print-layout only-print">
+        <!-- Section 1: Summary -->
+        <section class="print-sec">
+            <h2>PROFESSIONAL SUMMARY</h2>
+            <div class="h-line"></div>
+            <p>Passionate and results-oriented AI Engineer with <strong>8 years</strong> of software engineering experience, including <strong>2.5+ years</strong> of dedicated focus on building, optimizing, and deploying production-grade AI/LLM-powered applications. Expert in designing stateful multi-agent systems, Retrieval-Augmented Generation (RAG) pipelines, and high-performance Python backends. Highly skilled in writing clean, maintainable, and scalable code with a deep commitment to software engineering excellence, automated testing, and CI/CD/MLOps containerized workflows.</p>
+        </section>
+
+        <!-- Section 2: Skills -->
+        <section class="print-sec">
+            <h2>TECHNICAL SKILLS</h2>
+            <div class="h-line"></div>
+            <ul class="print-skills-list">
+                <li><strong>AI & LLM Frameworks:</strong> LangChain, LangGraph, LlamaIndex, CrewAI, Model Context Protocol (MCP), Prompt Engineering, RAG Architectures, Agentic Workflows.</li>
+                <li><strong>Core Languages & Backends:</strong> Python (FastAPI, Flask, Django), C++ (OOP, STL, C++11/14), Core Java, JavaScript, TypeScript, WebSockets.</li>
+                <li><strong>Machine Learning & CV:</strong> PyTorch, TensorFlow, Keras, OpenCV, MTCNN, Tiny-CLIP, ONNX, Scikit-learn, NLTK, Spacy.</li>
+                <li><strong>Vector Databases & Caching:</strong> Pinecone, Chroma, Milvus, Redis, SQLite, MySQL.</li>
+                <li><strong>DevOps & Cloud Tools:</strong> Docker, Kubernetes, Git, GitHub Actions (CI/CD), AWS, GCP, Azure, MLOps/LLMOps.</li>
+                <li><strong>Evaluation Frameworks:</strong> LangSmith, Ragas, TruLens (Evaluation and hallucination monitoring).</li>
+            </ul>
+        </section>
+
+        <!-- Section 3: Professional Experience -->
+        <section class="print-sec">
+            <h2>PROFESSIONAL EXPERIENCE</h2>
+            <div class="h-line"></div>
+            
+            <div class="print-job">
+                <div class="print-job-header">
+                    <div><strong>Virtusa, Bangalore</strong> — <em>AI Engineer</em></div>
+                    <div>Feb 2026 – Present</div>
+                </div>
+                <ul>
+                    <li><strong>AI & LLM Integration:</strong> Design, build, and optimize enterprise-grade GenAI applications utilizing OpenAI, Anthropic, and open-source models. Implemented advanced RAG systems and stateful multi-agent workflows with LangGraph and LangChain.</li>
+                    <li><strong>Backend Application Development:</strong> Write clean, maintainable, and highly concurrent APIs using <strong>FastAPI</strong> and <strong>Flask</strong>, establishing modular Python backends to support low-latency AI features.</li>
+                    <li><strong>Vector Databases & Caching:</strong> Managed data ingestion pipelines into <strong>Pinecone</strong> and <strong>Chroma</strong>. Integrated <strong>Redis</strong> caching, improving LLM query speed by 35% and reducing API costs.</li>
+                    <li><strong>DevOps & MLOps:</strong> Engineered CI/CD pipelines via GitHub Actions, containerized backend services using <strong>Docker</strong>, and managed cloud infrastructure on <strong>AWS/Azure</strong>.</li>
+                    <li><strong>Model Evaluation & Monitoring:</strong> Utilized <strong>LangSmith</strong> and <strong>Ragas</strong> to evaluate agentic trajectories, benchmark prompt performance, and track hallucination rates in production.</li>
+                </ul>
+            </div>
+
+            <div class="print-job">
+                <div class="print-job-header">
+                    <div><strong>Verificient Technologies Inc, Pune</strong> — <em>Computer Vision & AI Engineer</em></div>
+                    <div>March 2021 – Jan 2026</div>
+                </div>
+                <ul>
+                    <li><strong>Machine Learning & CV Systems:</strong> Developed and deployed production-grade computer vision applications, optimizing real-time object detection and classification models.</li>
+                    <li><strong>LLM & Video Integration:</strong> Designed a native C++ addon leveraging small-scale LLMs (GGML/GGUF) and Tiny-CLIP to enable natural language incident querying over video streams.</li>
+                    <li><strong>Inference Optimization:</strong> Optimized edge/cloud inference pipelines using <strong>ONNX Runtime</strong> and <strong>C++</strong>, reducing latency by 40% and cutting GPU resource overhead.</li>
+                    <li><strong>Cloud & Orchestration:</strong> Managed containerized microservices deployments on <strong>GCP</strong> and <strong>Azure</strong> using <strong>Kubernetes</strong> for scaling.</li>
+                    <li><strong>Frontend Prototyping:</strong> Built interactive dashboards using JavaScript, HTML5, and CSS3 to visualize live AI inference and model performance metrics.</li>
+                </ul>
+            </div>
+
+            <div class="print-job">
+                <div class="print-job-header">
+                    <div><strong>Zen Technologies Limited, Hyderabad</strong> — <em>Research Engineer - Software</em></div>
+                    <div>Jul 2018 – Feb 2021</div>
+                </div>
+                <ul>
+                    <li><strong>Software Engineering:</strong> Developed clean, modular, and object-oriented C++ and Python code for tactical simulation software.</li>
+                    <li><strong>Database & Schema:</strong> Architected database schemas in <strong>MySQL</strong> and <strong>SQLite</strong> for high-volume logs and performance tracking.</li>
+                    <li><strong>Microservices:</strong> Developed RESTful APIs using <strong>Flask</strong> and <strong>Django</strong> backends to integrate system modules.</li>
+                    <li><strong>Collaboration:</strong> Collaborated with cross-functional engineering teams to run automated test suites, improving release stability.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section 4: Projects -->
+        <section class="print-sec">
+            <h2>SELECTED PROJECTS</h2>
+            <div class="h-line"></div>
+            
+            <div class="print-project">
+                <strong>Multi-Agent Research Ops Orchestrator</strong> (LangGraph, LangChain, MCP, Python, Redis)
+                <p>Architected a stateful multi-agent system using LangGraph with persistent conversation memory, human-in-the-loop checkpoints, and dynamic tool discovery via MCP servers. Optimized reasoning paths with LangSmith/Ragas, reducing errors by 25%.</p>
+            </div>
+            
+            <div class="print-project">
+                <strong>LLM-Based Video Incident Analysis</strong> (GGML, Tiny-CLIP, C++, ONNX, Node.js)
+                <p>Built a native C++ inference addon using GGML and Tiny-CLIP to align video frames with semantic prompt embeddings. Provided natural language event querying capability over video datasets with sub-second response times.</p>
+            </div>
+
+            <div class="print-project">
+                <strong>Face Recognition Attendance System</strong> (Flask, SQLite, WebSockets, OpenCV, MTCNN)
+                <p>Engineered an end-to-end face recognition system using MTCNN and WebSockets for low-latency client-server video processing. Deployed containerized applications with Docker to cloud instances.</p>
+            </div>
+        </section>
+
+        <!-- Section 5: Education & Achievements -->
+        <section class="print-sec">
+            <h2>EDUCATION & ACHIEVEMENTS</h2>
+            <div class="h-line"></div>
+            <div class="print-edu-grid">
+                <div>
+                    <strong>M.Tech in Artificial Intelligence</strong><br>
+                    University of Hyderabad (2016 – 2018) | <strong>GPA: 8.63/10.0</strong>
+                </div>
+                <div>
+                    <strong>B.Tech in Computer Science & Engineering</strong><br>
+                    Guru Nanak Dev University (2012 – 2016) | <strong>GPA: 8.75/10.0</strong>
+                </div>
+            </div>
+            <p style="margin-top: 10px; font-size: 10.5px; line-height: 1.4;">
+                • <strong>Hackathon Winner:</strong> Won the 24-Hour University Hackathon hosted by Invesco Pvt Ltd.<br>
+                • <strong>GATE Qualifier:</strong> Qualified in the <strong>97.8th percentile</strong> in GATE-2016 CS (conducted by IISc Bangalore).
+            </p>
+        </section>
+    </div>
+
+    <!-- Main JS logic -->
+    <script src="app.js"></script>
+</body>
+</html>
