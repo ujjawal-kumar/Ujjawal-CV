@@ -2,26 +2,26 @@
    DESIGN SYSTEM & CUSTOM VARIABLES
    ========================================================================== */
 :root {
-    --bg-primary: #121212;
-    --bg-secondary: #1a1a1a;
-    --bg-card: #1e1e1e;
-    --border-color: #2d2d2d;
-    --border-hover: #454545;
+    --bg-primary: #ffffff;
+    --bg-secondary: #f6f8fa;
+    --bg-card: #ffffff;
+    --border-color: #d0d7de;
+    --border-hover: #8c959f;
     
-    --text-primary: #ffffff;
-    --text-secondary: #aaaaaa;
-    --text-muted: #6a6a6a;
+    --text-primary: #000000;
+    --text-secondary: #4a5568;
+    --text-muted: #718096;
     
-    --accent-teal: #ffffff;
-    --accent-cyan: #cccccc;
-    --accent-purple: #888888;
-    --accent-glow: rgba(255, 255, 255, 0.03);
+    --accent-teal: #000000;
+    --accent-cyan: #2d3748;
+    --accent-purple: #718096;
+    --accent-glow: rgba(0, 0, 0, 0.02);
     
     --font-heading: 'Outfit', sans-serif;
     --font-body: 'Inter', sans-serif;
     
     --transition-smooth: all 0.2s ease;
-    --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 8px 24px rgba(140, 149, 159, 0.08);
     --glass-blur: none;
 }
 
@@ -51,11 +51,11 @@ body {
     background: var(--bg-primary);
 }
 ::-webkit-scrollbar-thumb {
-    background: #3a3a3a;
+    background: #dcdcdc;
     border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #4f4f4f;
+    background: #b0b0b0;
 }
 
 /* ==========================================================================
@@ -134,8 +134,8 @@ body {
 
 .nav-btn.active {
     color: var(--text-primary);
-    background: #1e1e1e;
-    border-bottom: 2px solid #ffffff;
+    background: #ffffff;
+    border-bottom: 2px solid #000000;
     border-radius: 0;
 }
 
@@ -153,7 +153,7 @@ body {
 
 /* Buttons */
 .action-btn {
-    background: rgba(255, 255, 255, 0.05);
+    background: #f6f8fa;
     border: 1px solid var(--border-color);
     color: var(--text-primary);
     padding: 8px 16px;
@@ -169,19 +169,20 @@ body {
 }
 
 .action-btn:hover {
-    background: #ffffff;
-    color: #121212;
-    border-color: #ffffff;
+    background: #000000;
+    color: #ffffff;
+    border-color: #000000;
 }
 
 .accent-btn {
-    background: #ffffff;
-    color: #121212;
-    border: 1px solid #ffffff;
+    background: #000000;
+    color: #ffffff;
+    border: 1px solid #000000;
 }
 .accent-btn:hover {
-    background: #e0e0e0;
-    border-color: #e0e0e0;
+    background: #222222;
+    border-color: #222222;
+    color: #ffffff;
 }
 
 /* ==========================================================================
@@ -208,12 +209,12 @@ body {
     width: 100px;
     height: 100px;
     border-radius: 12px;
-    background: #252525;
-    border: 1px solid var(--border-color);
+    background: #000000;
+    border: 1px solid #000000;
     font-family: var(--font-heading);
     font-size: 36px;
     font-weight: 800;
-    color: var(--text-primary);
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -235,8 +236,8 @@ body {
 }
 
 .status-pill {
-    background: #252525;
-    color: var(--text-primary);
+    background: #f6f8fa;
+    color: #000000;
     border: 1px solid var(--border-color);
 }
 
@@ -294,7 +295,7 @@ a.contact-item:hover {
 
 .card:hover {
     border-color: var(--border-hover);
-    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 10px 30px rgba(140, 149, 159, 0.12);
 }
 
 .card h3 {
@@ -498,14 +499,14 @@ a.contact-item:hover {
     height: 14px;
     border-radius: 50%;
     background: var(--bg-primary);
-    border: 2px solid var(--border-hover);
+    border: 2px solid #000000;
     z-index: 2;
     transition: var(--transition-smooth);
 }
 
 .timeline-item:hover .timeline-marker {
-    background: #ffffff;
-    border-color: #ffffff;
+    background: #000000;
+    border-color: #000000;
 }
 
 .timeline-content {
@@ -593,8 +594,8 @@ a.contact-item:hover {
 .project-tag {
     font-size: 10px;
     font-weight: 600;
-    background: #252525;
-    color: var(--text-primary);
+    background: #f6f8fa;
+    color: #000000;
     border: 1px solid var(--border-color);
     padding: 2px 8px;
     border-radius: 6px;
@@ -673,14 +674,14 @@ a.contact-item:hover {
 
 .skill-bar {
     height: 6px;
-    background: rgba(255, 255, 255, 0.05);
+    background: #e1e4e8;
     border-radius: 10px;
     overflow: hidden;
 }
 
 .skill-progress {
     height: 100%;
-    background: #ffffff;
+    background: #000000;
     border-radius: 10px;
 }
 
@@ -706,7 +707,7 @@ a.contact-item:hover {
 }
 
 .markdown-preview-container {
-    background: #05070c;
+    background: #f6f8fa;
     border: 1px solid var(--border-color);
     border-radius: 14px;
     padding: 24px;
@@ -717,7 +718,7 @@ a.contact-item:hover {
 .markdown-preview-container pre {
     font-family: 'Courier New', Courier, monospace;
     font-size: 13px;
-    color: #a7f3d0;
+    color: #24292f;
     white-space: pre-wrap;
     word-break: break-all;
     line-height: 1.5;
