@@ -2,27 +2,27 @@
    DESIGN SYSTEM & CUSTOM VARIABLES
    ========================================================================== */
 :root {
-    --bg-primary: #0a0e17;
-    --bg-secondary: rgba(16, 22, 37, 0.7);
-    --bg-card: rgba(26, 36, 57, 0.45);
-    --border-color: rgba(255, 255, 255, 0.08);
-    --border-hover: rgba(0, 242, 254, 0.25);
+    --bg-primary: #121212;
+    --bg-secondary: #1a1a1a;
+    --bg-card: #1e1e1e;
+    --border-color: #2d2d2d;
+    --border-hover: #454545;
     
-    --text-primary: #f1f5f9;
-    --text-secondary: #94a3b8;
-    --text-muted: #64748b;
+    --text-primary: #ffffff;
+    --text-secondary: #aaaaaa;
+    --text-muted: #6a6a6a;
     
-    --accent-teal: #00f2fe;
-    --accent-cyan: #4facfe;
-    --accent-purple: #7f00ff;
-    --accent-glow: rgba(0, 242, 254, 0.15);
+    --accent-teal: #ffffff;
+    --accent-cyan: #cccccc;
+    --accent-purple: #888888;
+    --accent-glow: rgba(255, 255, 255, 0.03);
     
     --font-heading: 'Outfit', sans-serif;
     --font-body: 'Inter', sans-serif;
     
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --card-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
-    --glass-blur: blur(16px);
+    --transition-smooth: all 0.2s ease;
+    --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    --glass-blur: none;
 }
 
 /* ==========================================================================
@@ -51,42 +51,18 @@ body {
     background: var(--bg-primary);
 }
 ::-webkit-scrollbar-thumb {
-    background: #1e293b;
+    background: #3a3a3a;
     border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #334155;
+    background: #4f4f4f;
 }
 
 /* ==========================================================================
    BACKGROUND EFFECTS (SCREEN ONLY)
    ========================================================================== */
 .bg-blur {
-    position: fixed;
-    width: 40vw;
-    height: 40vw;
-    border-radius: 50%;
-    filter: blur(120px);
-    z-index: -1;
-    opacity: 0.25;
-    pointer-events: none;
-    animation: pulse 15s infinite alternate;
-}
-.bg-blur-1 {
-    top: -10vw;
-    left: -10vw;
-    background: radial-gradient(circle, var(--accent-teal), var(--accent-purple));
-}
-.bg-blur-2 {
-    bottom: -10vw;
-    right: -10vw;
-    background: radial-gradient(circle, var(--accent-cyan), var(--accent-purple));
-    animation-delay: -5s;
-}
-
-@keyframes pulse {
-    0% { transform: scale(1) translate(0, 0); opacity: 0.2; }
-    100% { transform: scale(1.1) translate(5vw, 5vw); opacity: 0.3; }
+    display: none !important;
 }
 
 /* ==========================================================================
@@ -126,9 +102,7 @@ body {
     font-family: var(--font-heading);
     font-weight: 800;
     font-size: 22px;
-    background: linear-gradient(135deg, var(--accent-teal), var(--accent-cyan));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--text-primary);
     letter-spacing: 1px;
 }
 
@@ -159,10 +133,10 @@ body {
 }
 
 .nav-btn.active {
-    color: var(--accent-teal);
-    background: rgba(0, 242, 254, 0.08);
-    box-shadow: inset 0 0 12px rgba(0, 242, 254, 0.05);
-    border: 1px solid rgba(0, 242, 254, 0.15);
+    color: var(--text-primary);
+    background: #1e1e1e;
+    border-bottom: 2px solid #ffffff;
+    border-radius: 0;
 }
 
 .icon {
@@ -195,20 +169,19 @@ body {
 }
 
 .action-btn:hover {
-    background: var(--accent-teal);
-    color: var(--bg-primary);
-    border-color: var(--accent-teal);
-    box-shadow: 0 0 15px var(--accent-glow);
+    background: #ffffff;
+    color: #121212;
+    border-color: #ffffff;
 }
 
 .accent-btn {
-    background: linear-gradient(135deg, var(--accent-teal), var(--accent-cyan));
-    color: var(--bg-primary);
-    border: none;
+    background: #ffffff;
+    color: #121212;
+    border: 1px solid #ffffff;
 }
 .accent-btn:hover {
-    opacity: 0.9;
-    box-shadow: 0 0 20px rgba(0, 242, 254, 0.3);
+    background: #e0e0e0;
+    border-color: #e0e0e0;
 }
 
 /* ==========================================================================
@@ -234,8 +207,9 @@ body {
 .profile-badge {
     width: 100px;
     height: 100px;
-    border-radius: 24px;
-    background: linear-gradient(135deg, var(--accent-teal), var(--accent-purple));
+    border-radius: 12px;
+    background: #252525;
+    border: 1px solid var(--border-color);
     font-family: var(--font-heading);
     font-size: 36px;
     font-weight: 800;
@@ -243,7 +217,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 10px 25px rgba(0, 242, 254, 0.2);
 }
 
 .profile-info {
@@ -262,9 +235,9 @@ body {
 }
 
 .status-pill {
-    background: rgba(0, 242, 254, 0.1);
-    color: var(--accent-teal);
-    border: 1px solid rgba(0, 242, 254, 0.2);
+    background: #252525;
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
 }
 
 .profile-info h1 {
@@ -284,9 +257,7 @@ body {
 }
 
 .gradient-text {
-    background: linear-gradient(135deg, var(--accent-teal), var(--accent-cyan));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--text-primary);
 }
 
 .contact-grid {
@@ -323,7 +294,7 @@ a.contact-item:hover {
 
 .card:hover {
     border-color: var(--border-hover);
-    box-shadow: 0 15px 35px -10px rgba(0, 242, 254, 0.08);
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6);
 }
 
 .card h3 {
@@ -508,7 +479,7 @@ a.contact-item:hover {
     top: 10px;
     bottom: 10px;
     width: 2px;
-    background: linear-gradient(to bottom, var(--accent-teal), var(--accent-purple), transparent);
+    background: var(--border-color);
 }
 
 .timeline-item {
@@ -523,19 +494,18 @@ a.contact-item:hover {
     position: absolute;
     left: -32px;
     top: 28px;
-    width: 18px;
-    height: 18px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
     background: var(--bg-primary);
-    border: 3px solid var(--accent-teal);
-    box-shadow: 0 0 10px var(--accent-teal);
+    border: 2px solid var(--border-hover);
     z-index: 2;
     transition: var(--transition-smooth);
 }
 
 .timeline-item:hover .timeline-marker {
-    background: var(--accent-teal);
-    transform: scale(1.2);
+    background: #ffffff;
+    border-color: #ffffff;
 }
 
 .timeline-content {
@@ -623,11 +593,11 @@ a.contact-item:hover {
 .project-tag {
     font-size: 10px;
     font-weight: 600;
-    background: rgba(127, 0, 255, 0.15);
-    color: #a855f7;
-    border: 1px solid rgba(127, 0, 255, 0.2);
+    background: #252525;
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
     padding: 2px 8px;
-    border-radius: 20px;
+    border-radius: 6px;
     white-space: nowrap;
 }
 
@@ -710,9 +680,8 @@ a.contact-item:hover {
 
 .skill-progress {
     height: 100%;
-    background: linear-gradient(to right, var(--accent-cyan), var(--accent-teal));
+    background: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 0 8px rgba(0, 242, 254, 0.3);
 }
 
 /* ==========================================================================
